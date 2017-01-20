@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_dM1F8N8BEeaqs91gHxD_cA" targetNamespace="http://tns.tibco.com/bw/composite/PG" name="PG" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_fuvCAN8BEeaqs91gHxD_cA" name="Operation-Add" promote="ComponentProcess/Operation-Add">
+    <sca:interface.wsdl xmi:id="_fu2WwN8BEeaqs91gHxD_cA" interface="http://xmlns.example.com/20170120061323PLT#wsdl.interface(Operation-Add)" scaext:wsdlLocation="../Processes/pg/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_fu9EcN8BEeaqs91gHxD_cA" name="RestService" path="/Operation/Add" docBasePath="http://localhost:7777/PG" docResourcePath="Operation" basePath="/" connector="pg.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/PG_1.0.json">
+      <operation xmi:id="_fvAu0N8BEeaqs91gHxD_cA" operationName="get" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_fwGT8N8BEeaqs91gHxD_cA">
+          <parameterMapping xmi:id="_fwG7AN8BEeaqs91gHxD_cA" parameterName="param1" parameterType="Query" dataType="integer#int32" required="true" description=""/>
+          <parameterMapping xmi:id="_fwG7Ad8BEeaqs91gHxD_cA" parameterName="param2" parameterType="Query" dataType="integer#int32" required="true" description=""/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+      </operation>
+      <parameters xmi:id="_fwFs4N8BEeaqs91gHxD_cA"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_fvAu0d8BEeaqs91gHxD_cA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_dxLJIN8BEeaqs91gHxD_cA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dxX9cN8BEeaqs91gHxD_cA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dxc18N8BEeaqs91gHxD_cA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dxhucN8BEeaqs91gHxD_cA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dxmm8N8BEeaqs91gHxD_cA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dxq4YN8BEeaqs91gHxD_cA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_dxvJ0N8BEeaqs91gHxD_cA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_dey_sN8BEeaqs91gHxD_cA" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_de004N8BEeaqs91gHxD_cA" processName="pg.Process"/>
+    <sca:service xmi:id="_furXoN8BEeaqs91gHxD_cA" name="Operation-Add">
+      <sca:interface.wsdl xmi:id="_fuslwN8BEeaqs91gHxD_cA" interface="http://xmlns.example.com/20170120061323PLT#wsdl.interface(Operation-Add)" scaext:wsdlLocation="../Processes/pg/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

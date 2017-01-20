@@ -1,0 +1,16 @@
+{
+    "records": [{
+        "name": "TIBCO Cloud",
+        "items": [{
+            "localTimestamp": 1484910809000,
+            "localURI": "/PG/Service Descriptors/PG_1.0.json",
+            "disabled": false,
+            "remoteTimestamp": 1484928322000,
+            "localHash": "4a5d1e7a151c1752ced2d6704fb407cf81bebcbe",
+            "remoteId": "35",
+            "remoteHash": "4a5d1e7a151c1752ced2d6704fb407cf81bebcbe"
+        }],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}
